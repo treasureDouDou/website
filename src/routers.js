@@ -49,6 +49,9 @@ const routes = [
     ]
   },
 
+  // 代币详情
+  { path: '/token/:id', name: 'token', component: r => require(['~pages/token/index.vue'], r) },
+
   // 用户协议与服务条款
   { path: '/protocol', component: r => require(['~pages/protocol/index.vue'], r) },
 
