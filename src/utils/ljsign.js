@@ -3,9 +3,9 @@ import { KJUR } from 'jsrsasign'
 
 // 登录钱包
 // 解密私钥
-export const decrypt = (enckey, pwd) => CryptoJS.AES
+export const decrypt = (enckey, pwd) => (CryptoJS.AES
                                                 .decrypt(enckey, pwd)
-                                                .toString(CryptoJS.enc.Utf8)
+                                                .toString(CryptoJS.enc.Utf8))
 
 // 签名
 export function doSign (prvkey, msg) {

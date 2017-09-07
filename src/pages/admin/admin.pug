@@ -10,7 +10,7 @@
                li(@click="handleNav"): a.title 菜   单
                li(@click="handleNav"): router-link(to="/admin/balances") 资产列表
                // li(@click="handleNav"): router-link(:to="{ path: '/admin/order', query: { type: 'sell'}}") 我的挂单
-               li(@click="handleNav('bonus')"): router-link(to="/admin/bonus") 提取分红
+               li(@click="handleNav('bonus')"): router-link(to="/admin/bonus") 提取燃料
 
                li(:class="[{'on': onHistory}, 'drop-trigger']")
                   a(@click="handleNav('history')") 交易记录
